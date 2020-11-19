@@ -10,3 +10,5 @@ JavaScript
 
 
 Screenshot
+![GitHub] (/images/logo.png)
+Format: ! [Alt Text] (url)

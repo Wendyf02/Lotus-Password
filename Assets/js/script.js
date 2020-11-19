@@ -1,5 +1,5 @@
 
-      //length of password
+      //length of password option
   var lengthReq = function() {
     //ask user to select password length
     length = window.prompt("Please enter a password length between 8 and 128 characters");
@@ -27,18 +27,17 @@
     if (uppercase === null) {
       return null
     }
-    //if user selects 'yes', add uppercase letters
-    
+    //if user selects 'Ok', add uppercase letters
     if (uppercase) {
       var uppercaseChoice = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
     } 
-    //if user selects 'no', do not add letters
+    //if user selects 'cancel', do not add letters
     else  {
       var uppercaseChoice = ""
     }
     //reset function if user enters an answer outside of the requirements
     return uppercaseChoice
-  };
+   };
   
       //lowercase letter option
   var getLowercase = function() {
@@ -48,17 +47,15 @@
     if (lowercase === null) {
       return null
     }
-    //if user selects 'yes', add lowercase letters
-  
+    //if user selects 'Ok', add lowercase letters
     if (lowercase) {
       var lowercaseChoice = "abcdefghijklmnopqrstuvwxyz" 
     } 
-    //if user selects 'no', produce empty string
+    //if user selects 'cancel', produce empty string
     else  {
       var lowercaseChoice = ""
     }
     //reset function if user enters an answer outside of the requirements
-  
     return lowercaseChoice;
   };
   
@@ -70,20 +67,19 @@
     if (numbers === null) {
       return null
     }
-    //if user selects 'yes', add numbers
-   
+    //if user selects 'Ok', add numbers
     if (numbers) {
       var numbersChoice = "0123456789" 
     } 
-    //if user selects 'no', produce empty string
+    //if user selects 'cancel', produce empty string
     else  {
       var numbersChoice = ""
     }
     //reset function if user enters an answer outside of the requirements
-    
     return numbersChoice;
   };
   
+
      //special characters option
   var getSpecialChar = function() {
     //ask user if they want to include special characters
@@ -92,20 +88,19 @@
     if (specialChar === null) {
       return null
     }
-    //if user selects yes, add special characters
-    
+    //if user selects 'Ok', add special characters
     if (specialChar) {
       var specialCharChoice = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
     } 
-    //if user selects 'no', produce emptry string
+    //if user selects 'cancel', produce emptry string
     else {
       var specialCharChoice = ""
     }
     //reset function if user enters an answer outside of the requirements
-    
     return specialCharChoice;
   };
   
+
     //password generator 
   function generatePassword() {
     //reset if user clicks 'cancel' throughout the prompts
@@ -129,10 +124,11 @@
     if (special === null) {
       return "";
     }
-    //bring user back to start if they don't select 'yes' for any option
+    
+    //bring user back to start if they don't select 'Ok' for any option
     var allChoices = uppercase + lowercase + numbers + special;
     if (!allChoices) {
-      window.alert("You must select 'yes' for at least one option.");
+      window.alert("You must select 'Ok' for at least one option.");
       return ""
     }
     else {
@@ -151,12 +147,12 @@
   
   var generateBtn = document.querySelector("#generate");
     
-  // Write password to the #password input
+   // Write password to the #password input
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
   }
   
-  // Add event listener to generate button
+   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
