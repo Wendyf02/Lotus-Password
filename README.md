@@ -10,7 +10,8 @@ JavaScript
 
 
 Screenshot
-![GitHub] (/images/Screen Shot 2.PNG)
+
+
 
 Format: ! [Alt Text] (url)
 
