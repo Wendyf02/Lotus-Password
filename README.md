@@ -10,3 +10,4 @@ JavaScript
 
 
 Screenshot ![GitHub] (/images/(Screen Shot 2.PNG)
+Please visit deployed project at: https://wendyf02.github.io/Lotus-Password/
