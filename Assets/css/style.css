@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -83,7 +83,7 @@ header {
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  padding: 18px 34px;
   text-align: center;
   cursor: pointer;
 }
@@ -112,7 +112,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 3px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -126,7 +126,7 @@ button[disabled] {
   }
 
   #password {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
