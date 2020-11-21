@@ -11,4 +11,4 @@ JavaScript
 
 Screenshot
 ![GitHub] (/images/logo.png)
-Format: ! [Alt Text] (url)
+Format: ! [password generator] (Screen Shot 2.PNG)
